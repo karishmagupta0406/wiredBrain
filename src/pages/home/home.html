@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <img src="assets/imgs/1.jpg" class="logo">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list *ngFor="let menu of menuData">
+    <ion-card>
+      <img src={{menu.pic}}>
+      <div class="card-title" [navPush]=menu.pushPage>{{menu.title}}</div>
+    </ion-card>
+ </ion-list>
+</ion-content>
